@@ -1,6 +1,8 @@
-
-
-
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativa = document.querySelector(".caixa-alternativa");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector("texto-resultado");
 
 
 const perguntas = [
@@ -13,7 +15,7 @@ const perguntas = [
             },
             {
                 texto: " (B) Lançar as bochas com força para retirar o maior número de bolas do adversário da cancha. ",
-                afirmacao: " Afirmação ",
+                afirmacao: " B)Embora a remoção de bolas adversárias seja uma tática importante , ela funciona como uma ferramenta para alcançar o objetivo principal, que é o de garantir a proximidade ao bolim. ",
             }
         ]
     },
@@ -70,3 +72,13 @@ const perguntas = [
         ]
     },
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta(){
+    perguntaAtual = pergunta[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta();
