@@ -63,7 +63,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: " pontear (rolar). ",
-                afirmacao:" (A) A ação de apontar é considerada a base técnica da bocha, exigindo cálculo, sensibilidade e controle para colocar a bola em uma posição vantajosa.",
+                afirmacao: " A ação de apontar é considerada a base técnica da bocha, exigindo cálculo, sensibilidade e controle para colocar a bola em uma posição vantajosa.",
             },
             {
                 texto: " atirar (bater). ",
@@ -76,7 +76,7 @@ const perguntas = [
 let atual = 0;
 let perguntaAtual;
 
-function mostraPergunta(){
+function mostraPergunta() {
     perguntaAtual = pergunta[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
 }
