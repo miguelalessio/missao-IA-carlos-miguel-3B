@@ -11,11 +11,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: " Lançar as bochas para que fiquem o mais próximo possível do balim.",
-                afirmacao: "  A) A excelência no jogo de bocha é medida pela precisão e pela capacidade de posicionar suas bolas em pontos estratégicos mais próximos ao alvo do que o seu oponente. ",
+                afirmacao: " A excelência no jogo de bocha é medida pela precisão e pela capacidade de posicionar suas bolas em pontos estratégicos mais próximos ao alvo do que o seu oponente. ",
             },
             {
                 texto: " Lançar as bochas com força para retirar o maior número de bolas do adversário da cancha. ",
-                afirmacao: " B)Embora a remoção de bolas adversárias seja uma tática importante , ela funciona como uma ferramenta para alcançar o objetivo principal, que é o de garantir a proximidade ao bolim. ",
+                afirmacao: " Embora a remoção de bolas adversárias seja uma tática importante , ela funciona como uma ferramenta para alcançar o objetivo principal, que é o de garantir a proximidade ao bolim. ",
             }
         ]
     },
@@ -24,7 +24,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: " Bocha Mestra. ",
-                afirmacao: " (A) No contexto do jogo, não existe uma bocha mestra; o termo bocha designa as bolas maiores que são utilizadas pelos jogadores para pontuar.",
+                afirmacao: " No contexto do jogo, não existe uma bocha mestra; o termo bocha designa as bolas maiores que são utilizadas pelos jogadores para pontuar.",
             },
             {
                 texto: " Balim.",
@@ -50,7 +50,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: " A equipe cuja bocha estiver mais longe do bolim deve jogar até que consiga posicionar uma bola mais perto que a do adversário. ",
-                afirmacao: "(A)A dinâmica do jogo é definida pela desvantagem posicional; a obrigação de jogar recai sobre a equipe que não detém o ponto, forçando-a a tentar reverter a situação.",
+                afirmacao: " A dinâmica do jogo é definida pela desvantagem posicional; a obrigação de jogar recai sobre a equipe que não detém o ponto, forçando-a a tentar reverter a situação.",
             },
             {
                 texto: " As equipes jogam de forma estritamente alternada, uma bocha por vez, até que todas as bolas tenham sido lançadas.",
