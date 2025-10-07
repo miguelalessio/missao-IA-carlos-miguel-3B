@@ -1,8 +1,8 @@
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternativa = document.querySelector(".caixa-alternativa");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector("texto-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 
 const perguntas = [
@@ -24,11 +24,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: " Bocha Mestra. ",
-                afirmacao: " No contexto do jogo, não existe uma bocha mestra; o termo bocha designa as bolas maiores que são utilizadas pelos jogadores para pontuar.",
+                afirmacao: " No contexto do jogo, não existe uma bocha mestra o termo bocha designa as bolas maiores que são utilizadas pelos jogadores para pontuar.",
             },
             {
                 texto: " Balim.",
-                afirmacao: " bolim é o ponto focal neutro da partida; a posição dele na cancha dita a estratégia e o valor de todas as outras jogadas subsequentes.",
+                afirmacao: ": Bolim é o ponto focal neutro da partida a posição dele na cancha dita a estratégia e o valor de todas as outras jogadas subsequentes.",
             }
         ]
     },
@@ -41,25 +41,25 @@ const perguntas = [
             },
             {
                 texto: " Apenas a equipe com a bocha mais próxima do bolim pontua, somando um ponto para cada bocha que esteja mais perto do alvo do que a melhor bocha adversária.",
-                afirmacao: " O sistema de pontuação da bocha é exclusivo, pois garante que apenas o time em vantagem na rodada seja recompensado, podendo marcar múltiplos pontos dependendo do quão superior foi sua jogada.",
+                afirmacao: "O sistema de pontuação da bocha é exclusivo, pois garante que apenas o time em vantagem na rodada seja recompensado, podendo marcar múltiplos pontos dependendo do quão superior foi sua jogada.",
             }
         ]
     },
     {
-        enunciado: " Durante uma rodada, qual é a regra que determina quem deve realizar o próximo lançamento?",
+        Enunciado: "Durante uma rodada, qual é a regra que determina quem deve realizar o próximo lançamento?",
         alternativas: [
             {
-                texto: " A equipe cuja bocha estiver mais longe do bolim deve jogar até que consiga posicionar uma bola mais perto que a do adversário. ",
-                afirmacao: " A dinâmica do jogo é definida pela desvantagem posicional; a obrigação de jogar recai sobre a equipe que não detém o ponto, forçando-a a tentar reverter a situação.",
+                texto: "A equipe cuja bocha estiver mais longe do bolim deve jogar até que consiga posicionar uma bola mais perto que a do adversário. ",
+                afirmacao: "A dinâmica do jogo é definida pela desvantagem posicional; a obrigação de jogar recai sobre a equipe que não detém o ponto, forçando-a a tentar reverter a situação.",
             },
-            {
-                texto: " As equipes jogam de forma estritamente alternada, uma bocha por vez, até que todas as bolas tenham sido lançadas.",
-                afirmacao: " Um sistema de turnos fixos não se aplica à bocha, pois a estratégia do jogo depende da capacidade de responder diretamente à posição das bolas adversárias a cada momento. ",
-            }
-        ]
-    },
     {
-        enunciado: " Qual termo descreve a jogada de precisão, onde o objetivo é rolar a bocha suavemente para posicioná-la perto do bolim? ",
+        texto: "  As equipes jogam de forma estritamente alternada, uma bocha por vez, até que todas as bolas tenham sido lançadas.",
+        afirmacao: " Um sistema de turnos fixos não se aplica à bocha, pois a estratégia do jogo depende da capacidade de responder diretamente à posição das bolas adversárias a cada momento. ",
+    }
+]
+    },
+{
+    Enunciado: " Qual termo descreve a jogada de precisão, onde o objetivo é rolar a bocha suavemente para posicioná-la perto do bolim? ",
         alternativas: [
             {
                 texto: " pontear (rolar). ",
@@ -70,15 +70,16 @@ const perguntas = [
                 afirmacao: " O ato de bater a bocha  corresponde a uma jogada ofensiva e de força, cujo intuito é desestruturar a jogada do adversário.",
             }
         ]
-    },
+},
 ];
 
 let atual = 0;
 let perguntaAtual;
 
 function mostraPergunta() {
-    perguntaAtual = pergunta[atual];
+    perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
 }
 
 mostraPergunta();
+
